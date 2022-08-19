@@ -1,0 +1,140 @@
+.container {
+    border: 5px solid green;
+    height: 125vh;
+    width: 100rw;
+    margin-top: 5px;
+    background-image: linear-gradient(to right, #2c3e50, #4ca1af);
+    padding-bottom: 5%;
+}
+
+.projectdiv {
+    text-transform: uppercase;
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    letter-spacing: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.contentdiv {
+    height: 75%;
+    width: 100rw;
+    background-image: linear-gradient(to right, #2c3e50, #4ca1af);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+   
+}
+
+.childdiv {
+    border: 3px solid white;
+    height: 75%;
+    width: 25%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: black;
+    padding-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.imagediv {
+    width: 100%;
+    height: 60%;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+    color: white
+}
+
+.pimage {
+    width: 100%;
+    height: 80%;
+    margin: auto;
+}
+
+.descdiv {
+    color: white;
+    font-family: monospace;
+    text-align: center;
+}
+
+.bottompart {
+    width: 90%;
+    height: 10%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dLink {
+    border-right: "1px solid white";
+    width: 50%;
+    height: 90%
+}
+
+.gLink {
+    border-left: 1px solid white;
+    width: 50%;
+    height: 90%;
+}
+
+.dLinkLogo{
+    width: 35px;
+     border-radius:100%;
+}
+
+.gLinkLogo{
+    width: 38px; 
+    border-radius: 100%;
+}
+
+@media screen and (max-width:570px) {
+    
+     .projectdiv{
+        font-size: 25px;
+     }
+     .imagediv{
+        font-size: 15px;
+     }
+     .container{
+        height: fit-content;
+     }
+     .contentdiv{
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100rw;
+        border: 1px solid white;
+     }
+     .childdiv{
+        width: 100%;
+     }
+}
+
+@media screen and (max-width:800px) {
+    
+    .projectdiv{
+       font-size: 25px;
+    }
+    .container{
+       height: fit-content;
+      
+    }
+    .contentdiv{
+       height: fit-content;
+       display: flex;
+       flex-wrap: wrap;
+       align-items: center;
+       gap: 10px;
+      
+    }
+    .childdiv{
+       width: 50%;
+    }
+}

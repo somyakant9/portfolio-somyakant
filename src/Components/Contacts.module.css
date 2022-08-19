@@ -1,0 +1,62 @@
+.container {
+    border: 5px solid white;
+    width: 100rw;
+    height: 25vh;
+    background-size: 100% 100%;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.contactDiv {
+    text-transform: uppercase;
+    color: black;
+    font-size: 17px;
+    letter-spacing: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.contentDiv {
+    text-transform: lowercase;
+    width: 40%;
+    height: 5vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+    align-items: center;
+}
+
+.logo {
+    width: 30px;
+}
+
+.emailDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0;
+}
+
+.emailImg{
+    width: 30px;
+    height: 25px;
+}
+
+@media screen and (max-width:550px) {
+    .container{
+        height: fit-content;
+    }
+  .contentDiv{
+    width: 70%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    font-weight: lighter;
+  }  
+  .emailDiv{
+    gap: 5px;
+  }
+}

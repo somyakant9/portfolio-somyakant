@@ -1,0 +1,120 @@
+.container {
+    border: 5px solid white;
+    width: 100rw;
+    height: 130vh;
+    background-color: black;
+    border-bottom: "none";
+    background-size: 100% 100%;
+}
+
+.skilldiv {
+    text-transform: uppercase;
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    letter-spacing: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.contentdiv {
+    width: 85%;
+    height: 65%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.skillOuterDiv {
+    border: 5px solid white;
+    width: 12%;
+    height: 25%;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.imageDiv {
+    width: 90%;
+    height: 75%;
+    margin-top: 5px;
+}
+
+.textDiv {
+    margin-top: 0;
+    letter-spacing: 3px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    font-family: monospace;
+}
+
+.textdiv1 {
+    margin-top: 0;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    font-family: monospace;
+}
+
+@media screen and (max-width:450px) {
+
+    .container {
+        height: fit-content;
+    }
+
+    .skilldiv {
+        font-size: 25px;
+    }
+
+    .skillOuterDiv {
+
+        width: 20%;
+        height: 12%;
+        margin-bottom: 10px;
+    }
+
+    .textDiv {
+        font-size: 9px;
+    }
+
+    .textdiv1 {
+        font-size: 7px;
+        letter-spacing: 0;
+    }
+}
+
+@media screen and (max-width:900px) {
+
+    .container {
+        height: fit-content;
+
+    }
+
+    .skilldiv {
+        font-size: 35px;
+    }
+
+    .contentdiv {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10%;
+    }
+
+    .skillOuterDiv {
+
+        width: 25%;
+        margin-bottom: 10px;
+    }
+
+    .textDiv {
+        font-size: 12px;
+    }
+
+    .textdiv1 {
+        font-size: 12px;
+    }
+}
