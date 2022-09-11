@@ -1,9 +1,8 @@
 .container {
     border: 5px solid white;
-    width: 100rw;
-    height: 25vh;
-    background-size: 100% 100%;
-    background-color: lightgray;
+    width: 100%;
+    height: fit-content;
+    /* background-color: lightgray; */
     text-align: center;
 }
 
@@ -11,19 +10,23 @@
     text-transform: uppercase;
     color: black;
     font-size: 17px;
+    word-wrap: break-word;
     letter-spacing: 10px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .contentDiv {
+    /* border: 1px solid black; */
     text-transform: lowercase;
     width: 40%;
-    height: 5vh;
+    height:fit-content;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 5%;
     align-items: center;
+
 }
 
 .logo {
@@ -35,6 +38,10 @@
     justify-content: center;
     align-items: center;
     letter-spacing: 0;
+  
+}
+.emailDiv>p{
+    word-wrap: break-word;
 }
 
 .emailImg{
@@ -59,4 +66,10 @@
   .emailDiv{
     gap: 5px;
   }
+}
+
+@media screen and (max-width:800px) {
+    .container{
+        height: fit-content;
+    }
 }

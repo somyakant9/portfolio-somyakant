@@ -1,10 +1,11 @@
 .container {
     border: 5px solid green;
-    height: 125vh;
+    height: fit-content;
     width: 100rw;
     margin-top: 5px;
-    background-image: linear-gradient(to right, #2c3e50, #4ca1af);
+    /* background-image: linear-gradient(to right, #2c3e50, #4ca1af); */
     padding-bottom: 5%;
+   
 }
 
 .projectdiv {
@@ -19,24 +20,28 @@
 .contentdiv {
     height: 75%;
     width: 100rw;
-    background-image: linear-gradient(to right, #2c3e50, #4ca1af);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 5%;
    
+   
 }
 
 .childdiv {
-    border: 3px solid white;
-    height: 75%;
+    border: 2px solid white;
+    height: fit-content;
     width: 25%;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     background-color: black;
     padding-bottom: 20px;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    box-shadow: 5px 5px 5px white;
+    margin-bottom: 5px;
+}
+.childdiv:hover{
+    transform: scale(1.1);
 }
 
 .imagediv {
@@ -59,6 +64,9 @@
     color: white;
     font-family: monospace;
     text-align: center;
+    padding-left: 3%;
+    padding-right: 3%;
+   
 }
 
 .bottompart {
@@ -91,14 +99,22 @@
     width: 38px; 
     border-radius: 100%;
 }
+.techstack{
+    color:white;
+    font-weight: bold;
+    font-family: monospace;
+    font-style: italic;
+}
 
 @media screen and (max-width:570px) {
     
      .projectdiv{
         font-size: 25px;
+     
      }
      .imagediv{
         font-size: 15px;
+        word-wrap: break-word;
      }
      .container{
         height: fit-content;

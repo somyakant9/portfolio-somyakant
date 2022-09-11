@@ -24,9 +24,9 @@
     background-position: 200%;
   }
 }
-
-
-
+.text1:hover{
+  transform: scale(1.2);
+}
 .navbar {
   z-index: 2;
   position: fixed;
@@ -48,19 +48,23 @@
 
 .link:hover {
   cursor: pointer;
-  text-shadow: #fff;
+  
+  transform: scale(1.5);
 
 }
 
 .navbar>a:hover {
   cursor: pointer;
-  border-bottom: 1px solid white;
+ 
 }
 
 .resume {
   text-decoration: none;
   color: white;
   padding-right: 20px;
+}
+.resume>a:hover{
+  transform: scale(1.5);
 }
 
 .nameDiv {
@@ -78,13 +82,10 @@
   font-size: 20px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
-
-
-.text1:hover {
-
-  font-size: 50px;
+.role:hover{
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px white;
 }
+
 @media screen and (max-width:850px) {
 
   .text1 {
@@ -118,6 +119,10 @@
 
   .role {
     font-size: 12px;
+  }
+  .container{
+    height: fit-content;
+    
   }
 }
 

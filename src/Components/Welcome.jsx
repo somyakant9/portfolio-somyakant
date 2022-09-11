@@ -1,15 +1,18 @@
 import React from 'react';
 import styles from './Welcome.module.css';
 import { Link } from 'react-scroll';
-import homepage from '../images/blur.jpg';
+import homepage from '../images/giphy4.gif';
 const Welcome = () => {
 
     return (
         <>
-            <div style={{
+            <div className={styles.container} style={{
                 height: "100vh", width: "100rw",
                 backgroundImage: `url(${homepage})`
                 , backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                backgroundAttachment: "fixed",
+                backgroundPosition: "center center"
             }}>
 
                 <div className={styles.navbar}>
@@ -17,7 +20,7 @@ const Welcome = () => {
                     <Link to='projects' spy={true} smooth={true}><div className={styles.link}>Projects</div></Link>
                     <Link to='skills' spy={true} smooth={true}><div className={styles.link}>Skills</div></Link>
                     <Link to='contacts' spy={true} smooth={true}><div className={styles.link}>Contact</div></Link>
-                    <a className={styles.resume} href="https://drive.google.com/file/d/1ArE3omG-pFBczFy_uPuEPeGEXs-YTfIk/view?usp=sharing" target="_blank" rel="noreferrer noopener"><div>Resume</div></a>
+                    <a className={styles.resume} href="https://drive.google.com/file/d/1Ew7muEUZnWJW4VPi-k79lviiV8CJGqbY/view?usp=sharing" target="_blank" rel="noreferrer noopener"><div className={styles.link}>Resume</div></a>
                 </div>
                 <div className={styles.nameDiv}>
                     <p className={styles.text1}>I am Somyakant Mohapatra</p>

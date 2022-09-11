@@ -1,7 +1,7 @@
 .container {
     border: 5px solid white;
     width: 100rw;
-    height: 130vh;
+    height: fit-content;
     background-color: black;
     border-bottom: "none";
     background-size: 100% 100%;
@@ -32,7 +32,11 @@
     width: 12%;
     height: 25%;
     background-color: black;
+    margin-bottom: 5%;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.skillOuterDiv:hover{
+    transform: scale(1.1);
 }
 
 .imageDiv {
@@ -67,6 +71,7 @@
 
     .skilldiv {
         font-size: 25px;
+        word-wrap: break-word;
     }
 
     .skillOuterDiv {
@@ -78,11 +83,13 @@
 
     .textDiv {
         font-size: 9px;
+        word-wrap: break-word;
     }
 
     .textdiv1 {
         font-size: 7px;
         letter-spacing: 0;
+        word-wrap: break-word;
     }
 }
 
@@ -95,6 +102,7 @@
 
     .skilldiv {
         font-size: 35px;
+        word-wrap: break-word;
     }
 
     .contentdiv {
@@ -112,9 +120,11 @@
 
     .textDiv {
         font-size: 12px;
+        word-wrap: break-word;
     }
 
     .textdiv1 {
         font-size: 12px;
+        word-wrap: break-word;
     }
 }
