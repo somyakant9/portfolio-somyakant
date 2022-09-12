@@ -8,6 +8,9 @@ import react from '../images/react.png';
 import redux from '../images/redux.png';
 import styles from './Skills.module.css';
 import crystal from '../images/crystal.jpg';
+import node from '../images/node.jpg';
+import mongo from '../images/mongo.png';
+import express from '../images/express.png';
 const Skills = () => {
 
     return (
@@ -46,6 +49,18 @@ const Skills = () => {
                 <div className={styles.skillOuterDiv}>
                     <img className={styles.imageDiv} src={chakra} alt="chakra-logo" />
                     <p className={styles.textDiv}>CHAKRA-UI</p>
+                </div>
+                <div className={styles.skillOuterDiv}>
+                    <img className={styles.imageDiv} src={node} alt="chakra-logo" />
+                    <p className={styles.textDiv}>NODE JS</p>
+                </div>
+                <div className={styles.skillOuterDiv}>
+                    <img className={styles.imageDiv} src={express} alt="chakra-logo" />
+                    <p className={styles.textDiv}>EXPRESS</p>
+                </div>
+                <div className={styles.skillOuterDiv}>
+                    <img className={styles.imageDiv} src={mongo} alt="chakra-logo" />
+                    <p className={styles.textDiv}>MONGO DB</p>
                 </div>
                 <hr size='3' width="95%" color="white" />
             </div>
