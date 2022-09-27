@@ -4,11 +4,14 @@
     height: fit-content;
     /* background-color: lightgray; */
     text-align: center;
+    color: white;
+    background-color: black;
+
 }
 
 .contactDiv {
     text-transform: uppercase;
-    color: black;
+    color: white;
     font-size: 17px;
     word-wrap: break-word;
     letter-spacing: 10px;
@@ -32,12 +35,15 @@
 .logo {
     width: 30px;
 }
-
+.logo:hover{
+    transform: scale(1.2);
+    box-shadow: 5px 5px 5px 0 rgba(241, 239, 239, 0.2), 0 6px 20px 0 rgba(238, 154, 154, 0.19);
+}
 .emailDiv {
     display: flex;
     justify-content: center;
     align-items: center;
-    letter-spacing: 0;
+    letter-spacing: 2px;
   
 }
 .emailDiv>p{

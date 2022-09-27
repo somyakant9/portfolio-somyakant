@@ -7,18 +7,18 @@ import javascript from '../images/javascript.png';
 import react from '../images/react.png';
 import redux from '../images/redux.png';
 import styles from './Skills.module.css';
-import crystal from '../images/crystal.jpg';
+// import giphy from '../images/giphy4.gif';
 import node from '../images/node.jpg';
 import mongo from '../images/mongo.png';
 import express from '../images/express.png';
 const Skills = () => {
 
     return (
-        <div id='skills' className={styles.container} style={{backgroundImage:`url(${crystal})`}}>
+        <div id='skills' className={styles.container}>
             <div className={styles.skilldiv}>
                 <p>Skills</p>
-                <hr size='3' width="50%" color="white" />
-                <hr size='3' width="80%" color="white" />
+                <hr size='3' width="50%" color="black" />
+                <hr size='3' width="80%" color="black" />
             </div>
 
             <div className={styles.contentdiv}>
@@ -62,10 +62,10 @@ const Skills = () => {
                     <img className={styles.imageDiv} src={mongo} alt="chakra-logo" />
                     <p className={styles.textDiv}>MONGO DB</p>
                 </div>
-                <hr size='3' width="95%" color="white" />
+                <hr size='3' width="95%" color="black" />
             </div>
 
-            <hr size='3' width="50%" color="white" />
+            <hr size='3' width="50%" color="black" />
         </div>
     )
 }

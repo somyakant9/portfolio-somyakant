@@ -48,9 +48,7 @@
 
 .link:hover {
   cursor: pointer;
-  
-  transform: scale(1.5);
-
+  text-decoration: underline;
 }
 
 .navbar>a:hover {
@@ -64,7 +62,7 @@
   padding-right: 20px;
 }
 .resume>a:hover{
-  transform: scale(1.5);
+  text-decoration: underline;
 }
 
 .nameDiv {
@@ -110,12 +108,13 @@
     font-size: 15px;
     margin-top: 80%;
   }
-
+  
   .navbar {
 
     font-size: 10px;
     gap: 2%;
   }
+ 
 
   .role {
     font-size: 12px;

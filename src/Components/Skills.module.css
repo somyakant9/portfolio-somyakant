@@ -2,14 +2,14 @@
     border: 5px solid white;
     width: 100rw;
     height: fit-content;
-    background-color: black;
+    background-color: rgb(213, 233, 200);
     border-bottom: "none";
     background-size: 100% 100%;
 }
 
 .skilldiv {
     text-transform: uppercase;
-    color: white;
+    color: black;
     font-size: 45px;
     text-align: center;
     letter-spacing: 10px;
@@ -37,6 +37,7 @@
 }
 .skillOuterDiv:hover{
     transform: scale(1.1);
+    box-shadow: 8px 10px 10px 10px rgba(22, 1, 1, 0.2), 0 6px 20px 0 rgba(3, 1, 1, 0.19);
 }
 
 .imageDiv {

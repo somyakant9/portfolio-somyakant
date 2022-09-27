@@ -20,7 +20,7 @@ const Welcome = () => {
                     <Link to='projects' spy={true} smooth={true}><div className={styles.link}>Projects</div></Link>
                     <Link to='skills' spy={true} smooth={true}><div className={styles.link}>Skills</div></Link>
                     <Link to='contacts' spy={true} smooth={true}><div className={styles.link}>Contact</div></Link>
-                    <a className={styles.resume} href="https://drive.google.com/file/d/1Ew7muEUZnWJW4VPi-k79lviiV8CJGqbY/view?usp=sharing" target="_blank" rel="noreferrer noopener"><div className={styles.link}>Resume</div></a>
+                    <a className={styles.resume} href="https://drive.google.com/file/d/1EstWmBqMIp1BXl6i4g82FHbkDQKbtVjZ/view?usp=sharing" target="_blank" rel="noreferrer noopener"><div className={styles.link}>Resume</div></a>
                 </div>
                 <div className={styles.nameDiv}>
                     <p className={styles.text1}>I am Somyakant Mohapatra</p>
