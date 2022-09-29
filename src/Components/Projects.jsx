@@ -10,12 +10,14 @@ import homepage from '../images/giphy4.gif';
 const Projects = () => {
 
     return (
-        <div id='projects' className={styles.container} style={{
+        <div id='projects' className={styles.container} 
+        style={{
             backgroundImage: `url(${homepage})`, backgroundRepeat: "no-repeat",
             backgroundSize:"cover",
             backgroundAttachment: "fixed",
             backgroundPosition: "center center"
-        }}>
+        }}
+        >
             <div className={styles.projectdiv}>
                 <p>Projects</p>
             </div>

@@ -2,7 +2,7 @@
     border: 5px solid white;
     width: 100rw;
     height: fit-content;
-    background-color: rgb(213, 233, 200);
+    background-color:white;
     border-bottom: "none";
     background-size: 100% 100%;
 }
@@ -29,7 +29,7 @@
 
 .skillOuterDiv {
     border: 5px solid white;
-    width: 12%;
+    width: 9%;
     height: 25%;
     background-color: black;
     margin-bottom: 5%;
@@ -115,7 +115,7 @@
 
     .skillOuterDiv {
 
-        width: 25%;
+        width: 15%;
         margin-bottom: 10px;
     }
 

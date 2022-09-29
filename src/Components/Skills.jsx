@@ -16,7 +16,7 @@ const Skills = () => {
     return (
         <div id='skills' className={styles.container}>
             <div className={styles.skilldiv}>
-                <p>Skills</p>
+                <p>Tech Stacks</p>
                 <hr size='3' width="50%" color="black" />
                 <hr size='3' width="80%" color="black" />
             </div>

@@ -1,15 +1,17 @@
 .container {
-    border: 5px solid orange;
+    /* border: 5px solid orange; */
     width: 100rw;
-    height: 90vh;
+    height: 120vh;
     gap: 1%;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .leftdiv {
-    border-right: 2px solid orange;
+    /* border-right: 2px solid orange; */
     width: 25%;
     height: 90%;
     display: flex;
@@ -20,7 +22,7 @@
 
 .imagediv {
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-    height: 60%;
+    height: 55%;
     width: 80%;
     align-self: center;
     padding-top: 10px;
@@ -50,6 +52,47 @@
     font-size: 20px;
     font-family: monospace;
 }
+.skillDiv{
+    /* border: 1px solid black; */
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.5%;
+    padding-bottom: 40px;
+  
+}
+.skillName{
+    font-weight: bold;
+    font-size: 16px;
+}
+.contentDiv{
+    /* border: 1px solid black; */
+    height: 70%;
+}
+.skillName+p{
+    font-family: monospace;
+}
+.logo{
+    /* border: 1px solid black; */
+    width: 30%;
+    height: 29%;
+    margin: auto;
+}
+.logo>img{
+    width: 90%;
+    /* border: 1px solid black; */
+}
+.skillhead{
+    font-weight: bolder;
+    font-size: 35px;
+   font-family: monospace;
+}
+.inner{
+    height: 100%;
+    width: 23%;
+}
 
 @media screen and (max-width: 450px){
 
@@ -58,7 +101,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-       height: 110vh;
+       height: fit-content;
     }
     .leftdiv{
         border: none;
@@ -78,6 +121,9 @@
         letter-spacing: 1px;
         font-size: 15px;
     }
+    .inner{
+        width: 50%;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -87,6 +133,7 @@
         justify-content: center;
         align-items: center;
         padding-bottom: 30px;
+        height: fit-content;
     }
     .leftdiv{
         border: none;
@@ -104,5 +151,8 @@
     .descdiv{
         letter-spacing: 2px;
         font-size: 15px;
+    }
+    .inner{
+        width: 40%;
     }
 }
