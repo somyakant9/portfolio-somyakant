@@ -18,9 +18,9 @@ const Skills = () => {
             <div className={styles.skilldiv}>
                 <p>Tech Stacks</p>
                 <hr size='3' width="50%" color="black" />
-                <hr size='3' width="80%" color="black" />
+               
             </div>
-
+            <hr size='3' width="80%" color="black" />
             <div className={styles.contentdiv}>
                 <div className={styles.skillOuterDiv}>
                     <img className={styles.imageDiv} src={html} alt="html-logo" />
@@ -64,8 +64,10 @@ const Skills = () => {
                 </div>
                 <hr size='3' width="95%" color="black" />
             </div>
-
+             <br />
             <hr size='3' width="50%" color="black" />
+            <br />
+            <br />
         </div>
     )
 }

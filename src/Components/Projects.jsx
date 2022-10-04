@@ -24,6 +24,8 @@ const Projects = () => {
             <hr size='3' width="50%" color="white" />
             <div className={styles.contentdiv}>
                 <hr size='3' width="80%" color="white" />
+                <br />
+                <br />
                 <div className={styles.childdiv}>
                     <div className={styles.imagediv}>
                         <p>Farfetch.com  Clone</p>
@@ -94,7 +96,10 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
+                <br />
                 <hr size='3' width="80%" color="white" />
+                <br />
+                <br />
             </div>
             <hr size='3' width="50%" color="white" />
         </div>

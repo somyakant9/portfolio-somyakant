@@ -4,6 +4,7 @@ import Contacts from './Components/Contacts';
 import Projects from './Components/Projects';
 import Skills from './Components/Skills';
 import Welcome from './Components/Welcome';
+import  Calender  from './Components/Calendar';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
      <About/>
      <Projects/>
      <Skills/>
-     <Contacts/>
+     <Calender/>
+     <Contacts/> 
     </div>
   );
 }

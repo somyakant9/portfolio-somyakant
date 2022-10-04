@@ -1,21 +1,22 @@
 .container {
-    border: 5px solid white;
+    border: 5px solid rgb(228, 219, 219);
     width: 100%;
     height: fit-content;
     /* background-color: lightgray; */
     text-align: center;
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: rgb(228, 219, 219);
 
 }
 
 .contactDiv {
     text-transform: uppercase;
-    color: white;
-    font-size: 17px;
+    color: black;
+    font-size:27px;
     word-wrap: break-word;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-bottom: 20px;
 }
 
 .contentDiv {
@@ -29,13 +30,22 @@
     justify-content: center;
     gap: 5%;
     align-items: center;
+    margin-top: 20px;
 
 }
 
 .logo {
     width: 30px;
+    border-radius: 10px;
+}
+.logo1{
+    width: 35px;
 }
 .logo:hover{
+    transform: scale(1.2);
+    box-shadow: 5px 5px 5px 0 rgba(241, 239, 239, 0.2), 0 6px 20px 0 rgba(238, 154, 154, 0.19);
+}
+.logo1:hover{
     transform: scale(1.2);
     box-shadow: 5px 5px 5px 0 rgba(241, 239, 239, 0.2), 0 6px 20px 0 rgba(238, 154, 154, 0.19);
 }
@@ -79,3 +89,4 @@
         height: fit-content;
     }
 }
+
