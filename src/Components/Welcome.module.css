@@ -1,11 +1,13 @@
 .text1 {
   margin-top: 20%;
   text-transform: uppercase;
-  background-image: linear-gradient(-225deg,
-      #231557 0%,
-      #d5e924 29%,
-      #f00e61 67%,
-      #1aff00 100%);
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #d5e924 29%,
+    #f00e61 67%,
+    #1aff00 100%
+  );
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
@@ -24,7 +26,7 @@
     background-position: 200%;
   }
 }
-.text1:hover{
+.text1:hover {
   transform: scale(1.2);
 }
 .navbar {
@@ -41,19 +43,20 @@
   gap: 4%;
   font-size: 20px;
   color: white;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   background-color: rgb(33, 51, 55);
-
 }
 
-.link:hover {
+.resume:hover {
   cursor: pointer;
   text-decoration: underline;
 }
-
-.navbar>a:hover {
+.links:hover {
   cursor: pointer;
- 
+  text-decoration: underline;
+}
+.navbar > a:hover {
+  cursor: pointer;
 }
 
 .resume {
@@ -61,7 +64,7 @@
   color: white;
   padding-right: 20px;
 }
-.resume>a:hover{
+.resume > a:hover {
   text-decoration: underline;
 }
 
@@ -70,29 +73,27 @@
   text-align: center;
   margin: auto;
   letter-spacing: 2px;
-
-
 }
 
 .role {
   color: white;
   letter-spacing: 2px;
   font-size: 20px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-.role:hover{
+.role:hover {
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px white;
 }
-
-@media screen and (max-width:850px) {
-
+.menu {
+  display: none;
+}
+@media screen and (max-width: 850px) {
   .text1 {
     font-size: 30px;
     margin-top: 40%;
   }
 
   .navbar {
-
     font-size: 10px;
     gap: 2%;
   }
@@ -102,26 +103,33 @@
   }
 }
 
-@media screen and (max-width:450px) {
-
+@media screen and (max-width: 450px) {
   .text1 {
     font-size: 15px;
     margin-top: 80%;
   }
-  
+
   .navbar {
-
-    font-size: 10px;
-    gap: 2%;
+    display: none;
   }
- 
-
+  .menu {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  .icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
   .role {
     font-size: 12px;
   }
-  .container{
+  .container {
     height: fit-content;
-    
   }
 }
-
