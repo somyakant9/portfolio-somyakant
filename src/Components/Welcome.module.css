@@ -33,7 +33,7 @@
   z-index: 2;
   position: fixed;
   top: 0;
-  width: 99%;
+  width: 100%;
   height: fit-content;
   padding: 15px;
   border-bottom: 1px solid white;
@@ -88,14 +88,30 @@
   display: none;
 }
 @media screen and (max-width: 850px) {
+  .navbarSmall {
+    display: none;
+  }
   .text1 {
     font-size: 30px;
     margin-top: 40%;
   }
 
   .navbar {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: fit-content;
+    padding: 15px;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
     font-size: 10px;
     gap: 2%;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    background-color: rgb(33, 51, 55);
   }
 
   .role {
@@ -107,6 +123,27 @@
   .text1 {
     font-size: 15px;
     margin-top: 80%;
+  }
+  .navbarSmall {
+    display: block;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 30%;
+    height: 100vh;
+    overflow: hidden;
+    transition: left 0.3s ease-in-out;
+    padding: 15px;
+    border-bottom: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4%;
+    font-size: 20px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    background-color: rgb(33, 51, 55);
   }
 
   .navbar {

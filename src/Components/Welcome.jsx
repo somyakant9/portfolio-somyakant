@@ -1,10 +1,14 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import styles from "./Welcome.module.css";
 import { Link } from "react-scroll";
 import homepage from "../images/giphy4.gif";
 import menuIcon from "../images/app-menu-icon-sign-symbol-design-free-png.webp";
 
 const Welcome = () => {
+
+  const [isOpen , setIsOpen] = useState(false);
+  const [viewportSize , setViewportSize] = useState({width:0, height:0});
+
   const handleDownload = (event) => {
     event.preventDefault(); // Prevent the default anchor click behavior
 
@@ -22,13 +26,40 @@ const Welcome = () => {
     document.body.appendChild(downloadLink);
     downloadLink.click();
     document.body.removeChild(downloadLink);
+    closeMenu();
   };
 
-  const openMenu= (e) => {
-   
-    console.log(e);
-     
+  const openMenu= () => {
+     setIsOpen(!isOpen);
+  };
+
+  const closeMenu = ()=>{
+    setIsOpen(false);
   }
+
+  useEffect(() => {
+    const handleResize = () => {
+      setViewportSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  useEffect(()=>{
+
+    if(viewportSize.width > 450){
+      setIsOpen(false);
+    };
+
+  },[viewportSize])
+  
 
   return (
     <>
@@ -45,8 +76,8 @@ const Welcome = () => {
         }}
       >
         <div>
-          <div className={styles.navbar} name="navbar">
-            <Link to="about" spy={true} smooth={true} className={styles.links}>
+          <div className={`${isOpen ? styles.navbarSmall : styles.navbar}`}>
+            <Link to="about" spy={true} smooth={true} className={styles.links} onClick={closeMenu}>
               About
             </Link>
             <Link
@@ -54,10 +85,11 @@ const Welcome = () => {
               spy={true}
               smooth={true}
               className={styles.links}
+              onClick={closeMenu}
             >
               Projects
             </Link>
-            <Link to="skills" spy={true} smooth={true} className={styles.links}>
+            <Link to="skills" spy={true} smooth={true} className={styles.links} onClick={closeMenu}>
               Skills
             </Link>
             <Link
@@ -65,6 +97,7 @@ const Welcome = () => {
               spy={true}
               smooth={true}
               className={styles.links}
+              onClick={closeMenu}
             >
               Contact
             </Link>
@@ -74,6 +107,7 @@ const Welcome = () => {
               target="_blank"
               rel="noreferrer noopener"
               onClick={handleDownload}
+              
             >
               Resume
             </a>

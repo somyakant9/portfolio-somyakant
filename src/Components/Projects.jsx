@@ -2,7 +2,7 @@ import React from 'react';
 import shopper from '../images/shopperStop.png';
 import github from '../images/github.jpg';
 import foreign from '../images/foreign.jpg';
-import farfetch from '../images/farfetch.png';
+import fastPizza from '../images/fast-react-pizza.PNG';
 import ideakart from '../images/ideakart.png';
 import styles from './Projects.module.css';
 import homepage from '../images/giphy4.gif';
@@ -28,22 +28,22 @@ const Projects = () => {
                 <br />
                 <div className={styles.childdiv}>
                     <div className={styles.imagediv}>
-                        <p>Farfetch.com  Clone</p>
-                        <img className={styles.pimage} src={farfetch} alt="shopperstop_homepage" />
+                        <p>Fast React Pizza</p>
+                        <img className={styles.pimage} src={fastPizza} alt="fastReactPizza_homepage" />
                     </div>
                     <hr size="1" width='40%' color="white" />
-                    <p className={styles.descdiv}>Farfetch is a British-Portuguese online luxury fashion retail platform that sells products from all around the world.</p>
+                    <p className={styles.descdiv}>Independently developed a fully responsive pizza ordering application with integrated geolocation for automatic location detection.</p>
                     <hr size="1" width='90%' color="white" />
-                    <p className={styles.techstack}>TECH STACK : HTML | CSS | REACTJS</p>
+                    <p className={styles.techstack}>TECH STACK: REACT|JAVASCRIPT|TAILWIND CSS|REDUX TOOLKIT</p>
                     <hr size="1" width='90%' color="white" />
                     <div className={styles.bottompart} >
                         <div className={styles.dLink}>
-                            <a href="https://gaudy-pies-9937.vercel.app/" target="_blank" rel="noreferrer noopener" >
+                            <a href="https://fast-react-pizza-bice-omega.vercel.app/" target="_blank" rel="noreferrer noopener" >
                                 <img className={styles.dLinkLogo} src={foreign} alt="website-logo" />
                             </a>
                         </div>
                         <div className={styles.gLink}>
-                            <a href="https://github.com/somyakant9/gaudy-pies-9937" target="_blank" rel="noreferrer noopener">
+                            <a href="https://github.com/somyakant9/fast-react-pizza" target="_blank" rel="noreferrer noopener">
                                 <img className={styles.gLinkLogo} src={github} alt="github-logo" />
                             </a>
                         </div>
