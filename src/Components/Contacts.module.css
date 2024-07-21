@@ -101,6 +101,23 @@ h2{
   button:hover:not([disabled]) {
     background-color: #005582;
   }
+
+
+.alert {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background-color: #22c55e; 
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  z-index:15;
+}
+
+
   
   @media screen and (max-width:1350px){
 

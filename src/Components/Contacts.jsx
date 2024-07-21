@@ -10,6 +10,7 @@ import { TiLocation } from "react-icons/ti";
 import { IconContext } from "react-icons";
 
 const Contacts = () => {
+  const [showAlert, setShowAlert] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -36,17 +37,23 @@ const Contacts = () => {
       message: formData.message,
     };
 
+    console.log(templateParams);
     emailjs
       .send(
-        "YOUR_SERVICE_ID", // Replace with your EmailJS service ID
-        "YOUR_TEMPLATE_ID", // Replace with your EmailJS template ID
+        "service_5z3sya9", // EmailJS service ID
+        "template_0rhdz49", // EmailJS template ID
         templateParams,
-        "YOUR_USER_ID" // Replace with your EmailJS user ID
+        "rYDOFAK3MNiKCqKpj" // EmailJS user ID (public key)
       )
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
-          alert("Message sent successfully!");
+          // alert("Message sent successfully!");
+          setShowAlert(true);
+
+          setTimeout(() => {
+            setShowAlert(false);
+          }, 3000);
           setIsSubmitting(false);
           setFormData({
             name: "",
@@ -135,6 +142,12 @@ const Contacts = () => {
         </div>
       </div>
       </IconContext.Provider>
+
+      {showAlert && (
+        <div className={styles.alert}>
+          Message Sent!
+        </div>
+       )} 
     </div>
   );
 };
