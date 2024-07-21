@@ -102,10 +102,12 @@
     border-radius: 100%;
 }
 .techstack{
+    word-wrap:break-word;
     color:white;
     font-weight: bold;
     font-family: monospace;
     font-style: italic;
+    
 }
 
 @media screen and (max-width:570px) {
@@ -132,6 +134,9 @@
      }
      .childdiv{
         width: 100%;
+     }
+     .techstack{
+        word-wrap:break-word;
      }
 }
 
